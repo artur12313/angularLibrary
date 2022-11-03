@@ -1,0 +1,12 @@
+.body {
+    height: calc(100vh - 124px);
+}
+
+.body .main {
+    height: 100%;
+}
+
+.content {
+    height: 100%;
+    position: relative;
+}
