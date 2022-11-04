@@ -13,6 +13,7 @@ export class PostsComponent implements OnInit {
   {
     this.posts.getData().subscribe(data=>{
       this.postsData = data;
+      console.log(this.postsData);
     }
     )
   }

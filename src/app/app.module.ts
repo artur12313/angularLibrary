@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './layouts/default/default.module';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormBuilder } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,9 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     DefaultModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
   ],
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

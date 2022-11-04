@@ -1,0 +1,19 @@
+<div class="col-md-12">
+    <form>
+        <div class="d-flex col-md-2 my-4 mx-2 justify-content-end">
+            <input class="form-control me-2" type="search" placeholder="Search" formControlName="search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </div>
+    </form>
+
+    <div ngIf="moviesData.length > 0" class="mx-2 mb-2">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ moviesData.Poster }}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{ moviesData.Title }}</h5>
+              <p class="card-text">{{ moviesData.Plot }}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
