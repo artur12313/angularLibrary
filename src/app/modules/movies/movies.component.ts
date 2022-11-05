@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieServiceService } from 'src/app/modules/movies/movie-service.service';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-movies',
@@ -9,8 +9,8 @@ import { FormBuilder } from '@angular/forms';
 })
 export class MoviesComponent implements OnInit {
 
-  searchForm = this.formBuilder.group({
-    search: '',
+  form = this.formBuilder.group({
+    search: new FormControl(''),
   });
 
   moviesData:any = [];
@@ -27,6 +27,10 @@ export class MoviesComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  submit(){
+
   }
 
 }

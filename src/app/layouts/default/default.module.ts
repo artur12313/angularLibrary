@@ -5,18 +5,21 @@ import { DefaultComponent } from './default.component';
 import { RouterModule } from '@angular/router';
 import { PostsComponent } from 'src/app/modules/posts/posts.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-
+import { MoviesComponent } from 'src/app/modules/movies/movies.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     DefaultComponent,
     DashboardComponent,
     PostsComponent,
+    MoviesComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     SharedModule,
+    ReactiveFormsModule,
   ]
 })
 export class DefaultModule { }
