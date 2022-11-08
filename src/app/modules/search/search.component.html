@@ -1,6 +1,18 @@
 <div [formGroup]="form" (onSubmit)="submit()">
-    <div class="d-flex col-md-2 my-4 mx-2 justify-content-end">
-        <input class="form-control me-2" type="search" placeholder="Search" formControlName="search" aria-label="Search">
+    <div class="d-flex col-md-12 my-4 mx-2 justify-content-center gap-2">
+        <div class="col-md-3">
+            <input class="form-control me-2" type="search" placeholder="title" formControlName="title" aria-label="title">
+        </div>
+        <div class="col-md-1">
+            <input class="form-control me-2" type="text" placeholder="year" formControlName="year" aria-label="year">
+        </div>
+        <div class="col-md-1">
+            <select class="form-select" formControlName="type" aria-label="type">
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+                <option value="episode">Episode</option>
+            </select>
+        </div>
         <button class="btn btn-outline-success" type="submit">Search</button>
     </div>
 </div>
